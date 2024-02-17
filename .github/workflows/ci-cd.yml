@@ -26,8 +26,7 @@ jobs:
 
     - name: Run tests
       run: |
-        # Ajoutez ici la commande pour exécuter vos tests
-        # Exemple : pytest
+        pytest
 
     - name: Deploy to Heroku
       if: github.ref == 'refs/heads/master' && job.status == 'success'
